@@ -1,29 +1,28 @@
-let checkClose = document.querySelector('#btn__check-close');
-let modal = document.querySelector('.modal');
-let shoppingCart = document.querySelector('.shopping-my-cart');
-let shoppingcartBtn = document.querySelector('#shopping-cart');
-let shoppingcartBox = document.querySelector('.shopping-cart-box');
-let btnDanger = document.querySelector('#btn__danger');
-let loginUser = document.querySelector('#login__user');
-let loginBox = document.querySelector('.login__box');
-let formClose = document.querySelector('#form-close');
+let checkClose = document.querySelector("#btn__check-close");
+let modal = document.querySelector(".modal");
+let shoppingCart = document.querySelector(".shopping-my-cart");
+let shoppingcartBtn = document.querySelector("#shopping-cart");
+let shoppingcartBox = document.querySelector(".shopping-cart-box");
+let btnDanger = document.querySelector("#btn__danger");
+let loginUser = document.querySelector("#login__user");
+let loginBox = document.querySelector(".login__box");
+let formClose = document.querySelector("#form-close");
 
-checkClose.addEventListener('click', function(){
+checkClose.addEventListener("click", function () {
   modal.remove();
 });
 
-shoppingcartBtn.addEventListener('click', function(){
-  shoppingCart.classList.toggle('active');
+shoppingcartBtn.addEventListener("click", function () {
+  shoppingCart.classList.toggle("active");
 });
 
-loginUser.addEventListener('click', function(){
-  loginBox.classList.add('active')
+loginUser.addEventListener("click", function () {
+  loginBox.classList.add("active");
 });
 
-formClose.addEventListener('click', function(){
-  loginBox.classList.remove('active')
+formClose.addEventListener("click", function () {
+  loginBox.classList.remove("active");
 });
-
 
 // Xoa cart
 
@@ -39,22 +38,20 @@ function addCart(x) {
   console.log(img);
 }
 
-function menu(element) 
-{
-  let tabs =document.getElementsByClassName('item');
+function menu(element) {
+  let tabs = document.getElementsByClassName("item");
   for (i = 0; i < tabs.length; i++) {
-    tabs[i].style.color = '#222222';
+    tabs[i].style.color = "#222222";
   }
-  element.style.color = '#fb4734';
-};
-
+  element.style.color = "#fb4734";
+}
 
 var swiper = new Swiper(".hero-slider", {
   spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
 });
 
@@ -73,14 +70,14 @@ var swiper = new Swiper(".product-categori-slider", {
     },
     1024: {
       slidesPerView: 4,
-    }
-  }         
+    },
+  },
 });
 
 var swiper = new Swiper(".customer-sli", {
-      pagination: {
-        el: ".dot",
-      },
+  pagination: {
+    el: ".dot",
+  },
 });
 
 var swiper = new Swiper(".blog-slider", {
@@ -94,8 +91,8 @@ var swiper = new Swiper(".blog-slider", {
     },
     1024: {
       slidesPerView: 3,
-    }
-  }
+    },
+  },
 });
 
 var swiper = new Swiper(".product-slider", {
@@ -109,10 +106,9 @@ var swiper = new Swiper(".product-slider", {
     },
     1024: {
       slidesPerView: 4,
-    }
-  }
+    },
+  },
 });
-
 
 var swiper = new Swiper(".brand-slider", {
   spaceBetween: 30,
@@ -129,26 +125,23 @@ var swiper = new Swiper(".brand-slider", {
     },
     1024: {
       slidesPerView: 6,
-    }
-  }
+    },
+  },
 });
-  window.onscroll = () =>{
+window.onscroll = () => {
+  if (window.scrollY > 60) {
+    document.querySelector("#scroll-top").classList.add("active");
+  } else {
+    document.querySelector("#scroll-top").classList.remove("active");
+  }
+};
 
-  
-    if(window.scrollY > 60){
-      document.querySelector('#scroll-top').classList.add('active');
-    }else{
-      document.querySelector('#scroll-top').classList.remove('active');
-    }
-  
-  }
-  
-  function loader(){
-    document.querySelector('.loader-container').classList.add('fade-out');
-  }
-  
-  function fadeOut(){
-    setInterval(loader, 3000);
-  }
-  
-  window.onload = fadeOut();
+function loader() {
+  document.querySelector(".loader-container").classList.add("fade-out");
+}
+
+function fadeOut() {
+  setInterval(loader, 3000);
+}
+
+window.onload = fadeOut();
