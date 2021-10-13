@@ -600,7 +600,7 @@ ul.product-menu-list li {
   display: block;
   height: 45.2rem;
   width: 100%;
-  background: url(/assets/img/pizza.png) -10rem center no-repeat;
+  background: url(/img/pizza.png) -10rem center no-repeat;
   background-size: 100%;
 }
 
@@ -659,7 +659,7 @@ ul.product-menu-list li {
 .pizza-1::before {
   position: absolute;
   content: "";
-  background: url(/assets/img/banner-bg1.png) 3rem center no-repeat;
+  background: url(img/banner-bg1.png) 3rem center no-repeat;
   height: 100%;
   width: 40%;
   background-size: cover;
@@ -690,7 +690,7 @@ ul.product-menu-list li {
 .pizza-2 {
   width: 50%;
   display: block;
-  background: url(/assets/img/pizza.png) center no-repeat;
+  background: url(/img/pizza.png) center no-repeat;
   height: 100%;
   position: absolute;
   top: 0;
@@ -699,7 +699,7 @@ ul.product-menu-list li {
 
 .pizza-2::before {
   content: "";
-  background: url(/assets/img/background.png) center center no-repeat;
+  background: url(/img/background.png) center center no-repeat;
   width: 100%;
   position: absolute;
   height: 65rem;
@@ -728,7 +728,7 @@ ul.product-menu-list li {
 
 .newletter-box {
   padding: 2.5rem;
-  background: #f5f5f5 url(/assets/img/newsletter-bg.png) center center;
+  background: #f5f5f5 url(/img/newsletter-bg.png) center center;
   background-size: cover;
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
 }
@@ -962,7 +962,7 @@ ul.product-menu-list li {
 }
 
 .banner__offer {
-  background: url(/assets/img/banner2-inner.png) center center no-repeat;
+  background: url(/img/banner2-inner.png) center center no-repeat;
   transform: scaleZ(10deg);
   height: 6.7rem;
   line-height: 6.7rem;
@@ -980,7 +980,7 @@ ul.product-menu-list li {
 .customer {
   padding-bottom: 4.5rem;
   text-align: center;
-  background-image: url(/assets/img/testimonial-bg.png);
+  background-image: url(/img/testimonial-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1080,7 +1080,7 @@ ul.product-menu-list li {
 
 .post-hover {
   position: absolute;
-  background: url(/assets/img/shape.png) no-repeat;
+  background: url(/img/shape.png) no-repeat;
   height: 5rem;
   left: 0;
   right: 0;
@@ -1302,7 +1302,7 @@ ul.list-unstyled li a:hover {
 .modal-form {
   position: absolute;
   width: 60rem;
-  background: url(/assets/img/newspopup.jpg) no-repeat;
+  background: url(/img/newspopup.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   padding: 4.6rem;
